@@ -61,6 +61,30 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				'gov-blue': {
+					DEFAULT: '#003366',
+					50: '#f0f8ff',
+					100: '#e0f2fe',
+					500: '#003366',
+					600: '#002951',
+					700: '#001f3f',
+					900: '#001122'
+				},
+				'gov-red': {
+					DEFAULT: '#C41E3A',
+					50: '#fef2f2',
+					100: '#fee2e2',
+					500: '#C41E3A',
+					600: '#991b2e',
+					700: '#7f1d1d'
+				},
+				'gov-gold': {
+					DEFAULT: '#FFD700',
+					50: '#fffbeb',
+					100: '#fef3c7',
+					500: '#FFD700',
+					600: '#d69e2e'
 				}
 			},
 			borderRadius: {
