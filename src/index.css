@@ -99,3 +99,92 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Импорт шрифта Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+/* Стили для режима слабовидящих */
+.accessibility-mode {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.accessibility-mode * {
+  font-size: calc(1em * var(--font-size-multiplier, 1)) !important;
+  line-height: 1.5 !important;
+}
+
+/* Высокий контраст - черно-белый */
+.accessibility-mode[style*="--contrast-mode: normal"] {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+
+.accessibility-mode[style*="--contrast-mode: normal"] * {
+  background-color: inherit !important;
+  color: inherit !important;
+  border-color: #ffffff !important;
+}
+
+/* Высокий контраст - сине-голубой */
+.accessibility-mode[style*="--contrast-mode: blue"] {
+  background: #003366 !important;
+  color: #ffffff !important;
+}
+
+.accessibility-mode[style*="--contrast-mode: blue"] * {
+  background-color: inherit !important;
+  color: inherit !important;
+  border-color: #ffffff !important;
+}
+
+/* Высокий контраст - коричнево-желтый */
+.accessibility-mode[style*="--contrast-mode: brown"] {
+  background: #4a3728 !important;
+  color: #ffff99 !important;
+}
+
+.accessibility-mode[style*="--contrast-mode: brown"] * {
+  background-color: inherit !important;
+  color: inherit !important;
+  border-color: #ffff99 !important;
+}
+
+/* Улучшенная читаемость */
+.accessibility-mode button,
+.accessibility-mode a,
+.accessibility-mode input,
+.accessibility-mode select,
+.accessibility-mode textarea {
+  font-weight: 500 !important;
+  padding: 12px 16px !important;
+  border: 2px solid currentColor !important;
+  border-radius: 4px !important;
+}
+
+.accessibility-mode button:hover,
+.accessibility-mode a:hover {
+  text-decoration: underline !important;
+  transform: scale(1.05) !important;
+}
+
+.accessibility-mode button:focus,
+.accessibility-mode a:focus,
+.accessibility-mode input:focus,
+.accessibility-mode select:focus,
+.accessibility-mode textarea:focus {
+  outline: 3px solid #ffff00 !important;
+  outline-offset: 2px !important;
+}
+
+/* Убираем тени и градиенты для лучшего контраста */
+.accessibility-mode * {
+  box-shadow: none !important;
+  text-shadow: none !important;
+  background-image: none !important;
+  background-attachment: scroll !important;
+}
+
+/* Подчеркивание ссылок */
+.accessibility-mode a {
+  text-decoration: underline !important;
+}
